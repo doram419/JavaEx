@@ -5,7 +5,7 @@ public class CharEx {
 		// char : 문자 1개의 유니코드를 저장 
 		char ch1 = 'A';
 		char ch2 = '한';
-		char chAdd;
+		// char chAdd;
 		
 		System.out.println("ch1 : " + ch1);
 		System.out.println("ch2 : " + ch2);
