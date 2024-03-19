@@ -17,5 +17,8 @@ public class VarEx {
 		System.out.println(v1);
 		System.out.println(v2);
 		System.out.println(v3);
+		
+		// warnings 제거용
+		System.out.println(myAge2);
 	}
 }

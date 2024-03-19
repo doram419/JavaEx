@@ -35,5 +35,9 @@ public class IntLongEx {
 		System.out.println(oct);
 		System.out.println(hex);
 		
+		//warnings 없애기용
+		intVar2 = 0;
+		System.out.println(intVar2);
+		
 	}
 }
