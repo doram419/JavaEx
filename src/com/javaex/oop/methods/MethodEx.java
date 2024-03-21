@@ -18,13 +18,13 @@ public class MethodEx {
 		System.out.println(sum);
 	}
 	
-	public static void printMessage() {
+	private static void printMessage() {
 		// 매개변수 X
 		// 리턴 X -> void
 		System.out.println("매개변수 없고, 리턴도 없는 메서드");
 	}
 	
-	public static String getMessage() {
+	private static String getMessage() {
 		return "매개변수 없지만, 리턴은 있는 메서드";
 	}
 	
