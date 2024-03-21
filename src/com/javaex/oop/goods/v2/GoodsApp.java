@@ -1,5 +1,6 @@
-package com.javaex.oop.goods.v1;
+package com.javaex.oop.goods.v2;
 
+// v2
 public class GoodsApp {
 	public static void main(String[] args) {
 		Goods camera = new Goods();
