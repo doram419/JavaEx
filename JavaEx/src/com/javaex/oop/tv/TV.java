@@ -1,6 +1,13 @@
 package com.javaex.oop.tv;
 
+// 채널 범위 : 1 ~ 255
+// 볼륨 범위 : 0 ~ 100
 public class TV {
+	private static final int MIN_CHANNEL = 1;
+	private static final int MAX_CHANNEL = 255;
+	private static final int MIN_VOLUME = 0;
+	private static final int MAX_VOLUME = 100;
+	
 	private int channel;
 	private int volume;
 	private boolean power;
@@ -32,22 +39,16 @@ public class TV {
 	public void power(boolean on)
 	{
 		this.power = on;
-		
-		if (on) {
-			System.out.println("티비를 켰습니다.");
-		}
-		else
-		{
-			System.out.println("티비를 껐습니다.");
-		}
 	}
 	
+	// 채널 변경 메서드
 	public void channel(int channel)
 	{
-		if(channel >= 1 && channel <= 255)
+		// 채널의 범위 체크
+		if(channel >= MIN_CHANNEL && channel <= MAX_CHANNEL)
 		{
 			this.channel = channel;
-			printChannel();
+			// 범윌르 벗어나면 채널 변경을 하지 않는다.
 		}
 		else
 		{
@@ -55,23 +56,24 @@ public class TV {
 		}
 	}
 	
+	// 채널 변경 메서드(오버로딩)
 	public void channel(boolean up) 
 	{
+		// 채널 올림
 		if(up)
 		{
 			this.channel++;
-			System.out.println("채널 위로");
 		}
+		// 채널 내림
 		else
 		{
 			this.channel--;
-			System.out.println("채널 아래로");
 		}
 		
-		if(this.channel > 255)
+		if(this.channel > MAX_CHANNEL)
 			this.channel -= 255;
 		
-		if(this.channel < 0)
+		if(this.channel < MIN_CHANNEL)
 			this.channel = 255;
 		
 		printChannel();
@@ -82,6 +84,7 @@ public class TV {
 		System.out.printf("현재 채널 : 채널 %d번%n", this.channel);
 	}
 	
+	// 볼륨 조절 메서드
 	public void volume(int volume)
 	{
 		if(volume >= 0 && volume <= 100)
@@ -95,27 +98,27 @@ public class TV {
 		}
 	}
 	
+	// 볼륨 조절 메서드(오버로딩)
 	public void volume(boolean up) 
 	{
 		if(up)
-		{
+		{	// 볼륨 높이기
 			this.volume++;
-			System.out.println("볼륨 위로");
 		}
 		else
-		{
+		{	// 볼륨 낮추기
 			this.volume--;
-			System.out.println("볼륨 아래로");
 		}
 		
-		if(this.volume > 100)
+		if(this.volume > MAX_VOLUME)
 			this.channel = 100;
 		
-		if(this.volume < 0)
+		if(this.volume < MIN_VOLUME)
 			this.volume = 0;
 		
 		printVolume();
 	}
+	
 	
 	private void printVolume()
 	{
