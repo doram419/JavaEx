@@ -31,7 +31,7 @@ public class StaticEx {
 		// TODO Auto-generated method stub
 		refCount--;
 		// 객체가 소멸 될 때 참조 카운트 1개 줄임
-		super.finalize();
+		//super.finalize();
 		System.out.println("소멸자 호출");
 	}
 
