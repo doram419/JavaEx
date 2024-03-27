@@ -6,7 +6,7 @@ public class Person {
 	
 	public Person() {
 		System.out.println("Person 생성자");
-		this.name = null;
+		this.name = "Unknown";
 		this.age = 0;
 	}
 	
