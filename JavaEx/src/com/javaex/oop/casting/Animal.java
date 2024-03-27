@@ -4,6 +4,10 @@ public class Animal {
 	// 필드
 	protected String name;
 	
+	public Animal() {
+		name = "default";
+	}
+	
 	// 생성자
 	public Animal(String name)
 	{
