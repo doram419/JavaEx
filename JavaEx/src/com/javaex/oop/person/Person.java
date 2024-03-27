@@ -5,12 +5,14 @@ public class Person {
 	private int age;
 	
 	public Person() {
+		System.out.println("Person 생성자");
 		this.name = null;
 		this.age = 0;
 	}
 	
 	public Person(String name, int age)
 	{
+		System.out.println("Person 생성자");
 		this.name = name;
 		this.age = age;
 	}
