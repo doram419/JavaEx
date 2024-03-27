@@ -9,6 +9,12 @@ public class Student extends Person{
 		this.schoolName = schoolName;
 	}
 	
+	public Student(String schoolName) {
+		super();
+		System.out.println("Student 생성자");
+		this.schoolName = schoolName;
+	}
+
 	public String getSchoolName() {
 		return schoolName;
 	}
