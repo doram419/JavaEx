@@ -29,5 +29,17 @@ public class AnimalApp {
 			pet = null; // ㅠㅠ.....
 			//pet = new Cat("아즈라엘"); // 부모가 아닌 클래스에서는 참조 불가
 		}
+		
+		{
+			Animal pet = new Dog("Azi");
+			pet.eat();
+			pet.walk();
+//			((Dog)(pet)).bark();
+			
+			pet = null;
+			
+			pet = new Cat("아즈라엘");
+			
+		}
 	}
 }
