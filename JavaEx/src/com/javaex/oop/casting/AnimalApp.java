@@ -4,6 +4,7 @@ public class AnimalApp {
 	public static void main(String[] args) {
 		Animal dog1 = new Dog("Snoopy");
 		// Upcasting : 부모 타입으로 자손 객체를 참조하는 것
+		// 		자동 캐스팅
 		// 참조 타입에 설계된 것만 사용할 수 있다.
 		
 		dog1.eat();
@@ -15,5 +16,9 @@ public class AnimalApp {
 		dog2.eat();
 		dog2.walk();
 		dog2.bark();
+		
+		// Downcasting : 명시적으로 타입을 지정
+		// dog1을 bark() 하도록 해보자
+		((Dog)(dog1)).bark();
 	}
 }
