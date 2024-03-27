@@ -18,5 +18,8 @@ public class PointApp {
 		
 		cp1.draw();
 		cp2.draw();
+		
+		cp1.draw(true);
+		cp2.draw(false);
 	}
 }
