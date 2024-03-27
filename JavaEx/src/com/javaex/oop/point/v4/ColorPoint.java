@@ -34,4 +34,12 @@ public class ColorPoint extends Point{
 		System.out.printf("색깔 점[x=%d, y=%d, color=%s] 점을 찍었습니다.\n"
 				,x, y, color);
 	}
+	
+	@Override
+	public void draw(boolean draw) {
+		String message = String.format("색깔 점[x = %d, y=%d, color=%s]을 ", x, y, color);
+
+		message += draw ? "그렸습니다." : "지웠습니다.";
+		System.out.println(message);
+	}
 }
