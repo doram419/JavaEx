@@ -24,6 +24,7 @@ public class ColorPoint extends Point{
 		this.color = color;
 	}
 	
+	// 일반 메서드
 	@Override // 현재 메서드가 Override인지 확인
 	public void draw() {
 		// getter 이용 우회접근
@@ -35,6 +36,7 @@ public class ColorPoint extends Point{
 				,x, y, color);
 	}
 	
+	// void draw(boolean) 메서드
 	@Override
 	public void draw(boolean bDraw) {
 		String message = String.format("색깔 점[x = %d, y=%d, color=%s]을 ", x, y, color);
