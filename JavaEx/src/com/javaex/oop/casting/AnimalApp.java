@@ -10,5 +10,10 @@ public class AnimalApp {
 		dog1.walk();
 //		dog1.bark();
 		// 부모 설계도에 있는 것만 사용가능
+		
+		Dog dog2 = new Dog("Doogy");
+		dog2.eat();
+		dog2.walk();
+		dog2.bark();
 	}
 }
