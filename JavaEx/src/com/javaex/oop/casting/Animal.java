@@ -19,6 +19,7 @@ public class Animal {
 		System.out.println(name + "이 먹고 있다.");
 	}
 	
+	// 걷는다
 	public void walk() {
 		System.out.println(name + "은 산책 중...");		
 	}

@@ -6,6 +6,7 @@ public class Dog extends Animal{
 		super(name);
 	}	
 	
+	// 짖는다
 	public void bark() {
 		System.out.println(name + "멍멍~!");
 	}
