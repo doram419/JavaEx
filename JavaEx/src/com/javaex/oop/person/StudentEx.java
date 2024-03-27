@@ -1,5 +1,5 @@
 package com.javaex.oop.person;
 
-public class StudentEx {
-
+public class StudentEx extends Person{
+	
 }
