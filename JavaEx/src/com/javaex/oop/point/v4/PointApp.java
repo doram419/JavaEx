@@ -17,5 +17,6 @@ public class PointApp {
 		ColorPoint cp2 = new ColorPoint(10, 10, "blue");
 		
 		cp1.draw();
+		cp2.draw();
 	}
 }
