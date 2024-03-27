@@ -23,9 +23,15 @@ public class ColorPoint extends Point{
 	public void setColor(String color) {
 		this.color = color;
 	}
-
-	@Override
+	
+	@Override // 현재 메서드가 Override인지 확인
 	public void draw() {
-		super.draw();
+		// getter 이용 우회접근
+//		System.out.printf("색깔 점[x=%d, y=%d, color=%s] 점을 찍었습니다.\n"
+//				,super.getX(), super.getY(), color);
+		
+		// 부모의 protected 된 거 접근 가능 
+		System.out.printf("색깔 점[x=%d, y=%d, color=%s] 점을 찍었습니다.\n"
+				,x, y, color);
 	}
 }
