@@ -3,10 +3,10 @@ package com.javaex.oop.casting;
 public class Dog extends Animal{
 	
 	public Dog(String name) {
-		super.name = name;
+		super(name);
 	}	
 	
 	public void bark() {
-		System.out.println(name + "멍멍");
+		System.out.println(name + "멍멍~!");
 	}
 }
