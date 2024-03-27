@@ -20,5 +20,14 @@ public class AnimalApp {
 		// Downcasting : 명시적으로 타입을 지정
 		// dog1을 bark() 하도록 해보자
 		((Dog)(dog1)).bark();
+		{
+			Dog pet = new Dog("Azi");
+			pet.eat();
+			pet.walk();
+			pet.bark();
+			
+			pet = null; // ㅠㅠ.....
+			//pet = new Cat("아즈라엘"); // 부모가 아닌 클래스에서는 참조 불가
+		}
 	}
 }
