@@ -34,12 +34,27 @@ public class AnimalApp {
 			Animal pet = new Dog("Azi");
 			pet.eat();
 			pet.walk();
-//			((Dog)(pet)).bark();
+//			pet.bark();
+			// 현재 pet이 어떤 클래스의 인스턴스인지 확인
+			if(pet instanceof Dog)
+				((Dog)pet).bark();
+			else if(pet instanceof Cat)
+			{
+				((Cat)pet).meow();
+			}
 			
 			pet = null;
 			
 			pet = new Cat("아즈라엘");
-			
+			pet.eat();
+			pet.walk();
+
+			if(pet instanceof Dog)
+				((Dog)pet).bark();
+			else if(pet instanceof Cat)
+			{
+				((Cat)pet).meow();
+			}
 		}
 	}
 }
